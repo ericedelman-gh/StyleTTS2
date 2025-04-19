@@ -463,8 +463,9 @@ def main(config_path):
             running_loss += loss_mel.item()
             accelerator.backward(g_loss)
             if torch.isnan(g_loss):
-                from IPython.core.debugger import set_trace
-                set_trace()
+                # from IPython.core.debugger import set_trace
+                # set_trace()
+                print("Loss is NaN")
 
             optimizer.step('bert_encoder')
             optimizer.step('bert')
