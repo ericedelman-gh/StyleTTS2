@@ -18,7 +18,7 @@ data_params:
   train_data: "/home/ubuntu/bms-single-speaker-2/Data/train_list.txt"
   val_data: "/home/ubuntu/bms-single-speaker-2/Data/val_list.txt"
   root_path: "/home/ubuntu/bms-single-speaker-2/Data/wavs"
-  OOD_data: "/home/ubuntu/bms-single-speaker-2/OOD_texts.txt"
+  OOD_data: "/home/ubuntu/bms-single-speaker-2/Data/OOD_texts.txt"
   min_length: 50 # sample until texts with this size are obtained for OOD texts
 
 preprocess_params:
